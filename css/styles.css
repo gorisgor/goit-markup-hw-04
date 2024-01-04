@@ -1,0 +1,330 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+a,
+ul {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container.addflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container.adddirection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ---------------------Header-------------------------- */
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-logo {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.header-logos {
+  color: #2e2f42;
+}
+.navigation {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto; 
+}
+.navigation-list {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display:flex;
+  gap: 40px;
+}
+.navigation-link {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.navigation-link:hover {
+  color: #404bbf;
+}
+.navigation-link:focus {
+  color: #404bbf;
+  text-decoration: underline;
+}
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+.address-item {
+  padding: 24px 0;
+  width: calc((100% - 40px) / 2);
+}
+.address {
+  font-style: normal;
+}
+.address-link {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-link:hover {
+  color: #404bbf;
+}
+.address-link:focus {
+  color: #404bbf;
+  text-decoration: underline;
+}
+/* ------------------------------------------------ */
+/* ------------------Hero-------------------------- */
+
+.section-hero {
+  background: #2e2f42;
+  padding: 188px 0;
+  
+}
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-bottom: 48px;
+}
+.button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background: #4d5ae5;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 636px;
+}
+.button:hover {
+  background: #404bbf;
+}
+.button:focus {
+  background: #404bbf;
+}
+
+/* ------------------------------------------------ */
+/* ------------------advantages-------------------- */
+
+.section-advantages {
+  background: #fff;
+  padding: 120px 0
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-advantages-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.section-advantages-navigation-item {
+  width: calc((100% - 72px) / 4);
+}
+.section-advantages-subtitle {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.section-advantages-text {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ------------------------------------------------ */
+/* ------------------Our Team---------------------- */
+
+.section-team {
+  background: #f4f4fd;
+  padding: 120px 0
+}
+.section-team-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px
+}
+.section-team-navigation {
+  display: flex;
+  gap: 24px;
+}
+.section-team-navigation-item {
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
+.card-text {
+  padding: 32px 0;
+}
+.section-team-subtitle {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.section-team-text {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+/* ------------------------------------------------ */
+/* ------------------Portfolio--------------------- */
+
+.section-folio {
+  background: #fff;
+  padding-top: 120px; 
+  padding-bottom: 120px;
+}
+.section-folio-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.section-folio-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+.section-folio-navigation-item {
+  background: #ffffff;
+  width: calc((100% - 48px) / 3);
+}
+.card-folio-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.section-folio-subtitle {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.section-folio-text {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ------------------------------------------------ */
+/* ------------------Footer------------------------ */
+
+.basement {
+  background: #2e2f42;
+  padding: 100px 0;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.basement-logoz {
+  color: #f4f4fd;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.basement-discr {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
