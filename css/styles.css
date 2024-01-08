@@ -62,10 +62,10 @@ img {
   color: #2e2f42;
 }
 .navigation {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: auto; 
+  margin-right: auto;
 }
 .navigation-list {
   color: #2e2f42;
@@ -73,7 +73,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display:flex;
+  display: flex;
   gap: 40px;
 }
 .navigation-link {
@@ -123,8 +123,9 @@ img {
 .section-hero {
   background: #2e2f42;
   padding: 188px 0;
-  
+  background-image: url(../images/people-office\ 1-min.png);
 }
+
 .hero-title {
   color: #fff;
   text-align: center;
@@ -163,7 +164,7 @@ img {
 
 .section-advantages {
   background: #fff;
-  padding: 120px 0
+  padding: 120px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -205,7 +206,7 @@ img {
 
 .section-team {
   background: #f4f4fd;
-  padding: 120px 0
+  padding: 120px 0;
 }
 .section-team-title {
   color: #2e2f42;
@@ -215,7 +216,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 72px
+  margin-bottom: 72px;
 }
 .section-team-navigation {
   display: flex;
@@ -251,7 +252,7 @@ img {
 
 .section-folio {
   background: #fff;
-  padding-top: 120px; 
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .section-folio-title {
