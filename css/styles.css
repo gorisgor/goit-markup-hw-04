@@ -123,7 +123,14 @@ img {
 .section-hero {
   background: #2e2f42;
   padding: 188px 0;
-  background-image: url(../images/people-office\ 1-min.png);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1-min.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -186,6 +193,15 @@ img {
 .section-advantages-navigation-item {
   width: calc((100% - 72px) / 4);
 }
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
 .section-advantages-subtitle {
   color: #2e2f42;
   font-size: 20px;
@@ -247,6 +263,13 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
 }
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
 /* ------------------------------------------------ */
 /* ------------------Portfolio--------------------- */
 
@@ -302,6 +325,11 @@ img {
   background: #2e2f42;
   padding: 100px 0;
 }
+.container.addfooterflex {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -328,4 +356,26 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+.footer-soc {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer-soclist {
+  display: inline-block;
+  align-self: flex-start;
+}
+.soclist-item {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.icon {
+  fill: #4d5ae5;
+}
+.icon:hover use {
+  fill: #31d0aa;
 }
