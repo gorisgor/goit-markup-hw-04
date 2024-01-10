@@ -374,11 +374,13 @@ img {
   margin-top: 16px;
 }
 .soclist-icon {
-  fill: #4d5ae5;
 }
 .icon {
-  fill: #4d5ae5;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  border-radius: 50%;
 }
-.icon:hover use {
-  fill: #31d0aa;
+.icon:hover {
+  /* fill: #31d0aa; */
+  background-color: #31d0aa;
 }
