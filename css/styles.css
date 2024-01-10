@@ -127,7 +127,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1-min.png);
+    url(../images/people-office\ 1-min.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -372,6 +372,9 @@ img {
   display: flex;
   gap: 16px;
   margin-top: 16px;
+}
+.soclist-icon {
+  fill: #4d5ae5;
 }
 .icon {
   fill: #4d5ae5;
