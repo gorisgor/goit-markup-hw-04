@@ -47,6 +47,8 @@ img {
 .header {
   background: #fff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-logo {
   color: #4d5ae5;
@@ -86,13 +88,18 @@ img {
   padding-bottom: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 .navigation-item:first-child::after {
   content: " ";
+  display: block;
   border-radius: 2px;
   background: #404bbf;
   width: 48px;
   height: 4px;
+  position: absolute;
+  /* left: 0; */
+  /* bottom: -1px; */
 }
 .navigation-link:hover {
   color: #404bbf;
@@ -118,7 +125,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover {
   color: #404bbf;
@@ -131,6 +138,7 @@ img {
 /* ------------------Hero-------------------------- */
 
 .section-hero {
+  max-width: 1440px;
   background: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
@@ -158,7 +166,7 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -168,13 +176,13 @@ img {
   cursor: pointer;
   border-radius: 4px;
   margin: 0 636px;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 .button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* ------------------------------------------------ */
@@ -207,10 +215,11 @@ img {
 .advantages-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 112px;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background-color: #f4f4fd;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 .section-advantages-subtitle {
@@ -253,9 +262,8 @@ img {
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card-text {
   padding: 32px 0;
@@ -283,18 +291,24 @@ img {
   gap: 24px;
   margin-top: 8px;
 }
-.team-soc-item {
+.team-soc-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.team-soc-item {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-item:hover {
+.team-soc-link:hover {
+  background-color: #404bbf;
+}
+.team-soc-link:focus {
   background-color: #404bbf;
 }
 
@@ -328,9 +342,8 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-folio-navigation-item:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .folio-image-wrap {
   position: relative;
@@ -384,7 +397,7 @@ img {
 }
 .container.addfooterflex {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 .footer-logo {
   display: inline-block;
@@ -413,12 +426,16 @@ img {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+.logo-text {
+  margin-right: 120px;
+}
 .footer-soc {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 .footer-soclist-wraper {
 }
@@ -428,19 +445,25 @@ img {
   margin-top: 16px;
 }
 .footer-soclist-item {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soclist-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
 }
 .icon {
   fill: #f4f4fd;
 }
-.footer-soclist-item:hover {
+.soclist-icon:hover {
+  background-color: #31d0aa;
+}
+.soclist-icon:focus {
   background-color: #31d0aa;
 }
