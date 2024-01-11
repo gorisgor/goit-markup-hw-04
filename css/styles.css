@@ -350,14 +350,14 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.section-folio-navigation-item:hover .folio-image-wrap {
+.section-folio-navigation-item:hover .folio-cover-text {
   transform: translateY(0%);
 }
 .folio-image-wrap {
   position: relative;
   overflow: hidden;
 }
-.foilio-cover-text {
+.folio-cover-text {
   position: absolute;
   top: 0;
   font-size: 16px;
