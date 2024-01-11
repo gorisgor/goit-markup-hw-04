@@ -84,10 +84,11 @@ img {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-link::after {
-  content: "";
+.navigation-item:first-child::after {
+  content: " ";
   border-radius: 2px;
   background: #404bbf;
   width: 48px;
@@ -167,7 +168,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   margin: 0 636px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background: #404bbf;
@@ -324,6 +325,12 @@ img {
 .section-folio-navigation-item {
   background: #ffffff;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-folio-navigation-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .folio-image-wrap {
   position: relative;
@@ -429,6 +436,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon {
   fill: #f4f4fd;
